@@ -6,21 +6,22 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.activity.ComponentActivity
-import com.example.aaa.databinding.ActivityMainBinding
+import com.example.aaa.databinding.ActivityMain3Binding
 
 //эта функция дает доступ к кнопкам Activity_Main
 class MainActivity3 : ComponentActivity() {
-    lateinit var Nail: ActivityMainBinding
+    lateinit var Nail: ActivityMain3Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Nail = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_main3)
+        Nail = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(Nail.root)
 
     }
     //кнопка верунтся назад
     fun onClickMain3(view: View){
-        val perehod = Intent(this, MainActivity::class.java)
-        startActivity(perehod)
+        val perehodActivity3 = Intent(this, MainActivity::class.java)
+        startActivity(perehodActivity3)
     }
 
 }

@@ -40,6 +40,7 @@
             android:layout_weight="1"
             android:onClick="onClickMain2"
             android:text="start"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

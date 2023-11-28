@@ -13,15 +13,18 @@ class MainActivity : ComponentActivity() {
     lateinit var Asus: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         Asus = ActivityMainBinding.inflate(layoutInflater)
         setContentView(Asus.root)
 
+
     }
-    //кнопка перехода в 2 лист
+
     fun onClickMain2(view: View){
-        val perehod = Intent(this, MainActivity2::class.java)
-        startActivity(perehod)
+        val onClickMain2 = Intent(this, MainActivity2::class.java)
+        startActivity(onClickMain2)
     }
+
 
 
 }

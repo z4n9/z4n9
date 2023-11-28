@@ -126,7 +126,6 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginBottom="16dp"
-        android:layout_weight="1"
         android:onClick="onClickMain3"
         android:text="Бой"
         app:layout_constraintBottom_toBottomOf="parent" />

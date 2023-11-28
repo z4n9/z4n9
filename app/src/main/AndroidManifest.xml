@@ -13,15 +13,8 @@
         android:theme="@style/Theme.Aaa"
         tools:targetApi="31" >
         <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="R2F"
             android:theme="@style/Theme.Aaa" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,8 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main1Activity" />
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity3" />
     </application>
 
 </manifest>
