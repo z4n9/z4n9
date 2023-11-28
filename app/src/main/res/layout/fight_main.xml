@@ -52,6 +52,7 @@
                 <Button
                     android:id="@+id/left"
                     android:layout_width="match_parent"
+                    android:src="@drawable/left"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
@@ -74,6 +75,7 @@
                 <Button
                     android:id="@+id/panch"
                     android:layout_width="match_parent"
+                    android:src="@drawable/punch"
                     android:layout_height="wrap_content"
                     android:text="Button" />
             </LinearLayout>
@@ -98,6 +100,7 @@
                 <Button
                     android:id="@+id/leg_panch"
                     android:layout_width="match_parent"
+                    android:src="@drawable/kick"
                     android:layout_height="wrap_content"
                     android:text="Button" />
             </LinearLayout>
@@ -121,6 +124,7 @@
                 <Button
                     android:id="@+id/right"
                     android:layout_width="match_parent"
+                    android:src="@drawable/right"
                     android:layout_height="wrap_content"
                     android:text="Button" />
             </LinearLayout>
@@ -159,27 +163,29 @@
                 <Button
                     android:id="@+id/left_2"
                     android:layout_width="match_parent"
+                    android:src="@drawable/left"
                     android:layout_height="wrap_content"
                     android:text="Button" />
             </LinearLayout>
         </LinearLayout>
 
-        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКОК УДАРА И УДАРА НОГОЙ 2-->
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКОК УДАРА И УДАРА РУКОЙ 2-->
         <LinearLayout
             android:layout_width="61dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА НОГОЙ 2-->
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА РУКОЙ 2-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:orientation="vertical">
 
-                <!--ЭТО  КНОПКА УДАРА НОГОЙ 2-->
+                <!--ЭТО  КНОПКА УДАРА РУКОЙ 2-->
                 <Button
                     android:id="@+id/panch_2"
                     android:layout_width="match_parent"
+                    android:src="@drawable/punch"
                     android:layout_height="wrap_content"
                     android:text="Button" />
             </LinearLayout>
@@ -226,6 +232,7 @@
             <Button
                 android:id="@+id/right_2"
                 android:layout_width="match_parent"
+                android:src="@drawable/right"
                 android:layout_height="wrap_content"
                 android:text="Button" />
         </LinearLayout>
