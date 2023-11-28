@@ -1,18 +1,13 @@
 package com.example.aaa
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.aaa.databinding.ActivityMainBinding
-import com.example.aaa.ui.theme.AaaTheme
+
 
 class MainActivity : ComponentActivity() {
     lateinit var Asus: ActivityMainBinding
@@ -21,6 +16,10 @@ class MainActivity : ComponentActivity() {
         Asus = ActivityMainBinding.inflate(layoutInflater)
         setContentView(Asus.root)
 
+    }
+    fun onClickMain2(view: View){
+        val perehod = Intent(this, Main1Activity::class.java)
+        startActivity(perehod)
     }
 
 }
