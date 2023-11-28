@@ -3,128 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
 
-    <LinearLayout
-        android:id="@+id/joystick1"
-        android:layout_width="175dp"
-        android:layout_height="145dp"
-        android:layout_marginStart="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937">
-
-        <LinearLayout
-            android:layout_width="61dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="61dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:orientation="vertical"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/joystick2"
-        android:layout_width="175dp"
-        android:layout_height="145dp"
-        android:layout_marginEnd="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937">
-
-        <LinearLayout
-            android:layout_width="61dp"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="61dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:orientation="vertical"></LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center"
-                android:orientation="vertical"></LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
+    <!--ЭТО ФОН-->
     <ImageView
         android:id="@+id/star3"
         android:layout_width="wrap_content"
@@ -133,9 +15,223 @@
         android:src="@drawable/img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--ЭТО ПОЛЕ ДЛЯ ДЖОСТИКА ПЕРВОГО ИГРОКА-->
+    <LinearLayout
+        android:id="@+id/joystick1"
+        android:layout_width="175dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937">
+
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--ЭТО КНОПКА ЛЕВО-->
+                <Button
+                    android:id="@+id/left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКОК УДАРА И УДАРА НОГОЙ-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК УДАРА -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+                <!--ЭТО КНОПКА УДАРА -->
+                <Button
+                    android:id="@+id/panch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ ПО ЦЕНТРУ НА ВСЯКИЙ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА НОГОЙ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--ЭТО  КНОПКА УДАРА НОГОЙ-->
+                <Button
+                    android:id="@+id/leg_panch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО  ПОЛЕ  ПОЛЕ ДЛЯ КНОПКИ ПРАВО -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО    ПОЛЕ ДЛЯ КНОПКИ ПРАВО -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--ЭТО  КНОПКА ПРАВО -->
+                <Button
+                    android:id="@+id/right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--ЭТО ПОЛЕ ДЛЯ ДЖОСТИКА ПЕРВОГО ИГРОКА 2-->
+    <LinearLayout
+        android:id="@+id/joystick2"
+        android:layout_width="175dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО 2-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--ЭТО КНОПКА ЛЕВО 2-->
+                <Button
+                    android:id="@+id/left_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКОК УДАРА И УДАРА НОГОЙ 2-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА НОГОЙ 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+                <!--ЭТО  КНОПКА УДАРА НОГОЙ 2-->
+                <Button
+                    android:id="@+id/panch_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ ПО ЦЕНТРУ НА ВСЯКИЙ 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА НОГОЙ 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--ЭТО  КНОПКА УДАРА НОГОЙ 2-->
+                <Button
+                    android:id="@+id/leg_panch_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <!--ЭТО  ПОЛЕ  ПОЛЕ ДЛЯ КНОПКИ ПРАВО 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--ЭТО   ПОЛЕ ДЛЯ КНОПКИ ПРАВО 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО  КНОПКА ПРАВО 2 -->
+            <Button
+                android:id="@+id/right_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+<!--ЭТО ПОЛЕ ДЖОСТИКА ВТОРОГО ИГРОКА-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
