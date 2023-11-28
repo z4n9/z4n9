@@ -21,11 +21,7 @@ class MainActivity : ComponentActivity() {
         Asus = ActivityMainBinding.inflate(layoutInflater)
         setContentView(Asus.root)
 
-
-
     }
+
+
 }
-
-
-
-
