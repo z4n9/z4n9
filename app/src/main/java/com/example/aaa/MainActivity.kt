@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
 
     }
     fun onClickMain2(view: View){
-        val perehod = Intent(this, Main1Activity::class.java)
+        val perehod = Intent(this, MainActivity::class.java)
         startActivity(perehod)
     }
 
