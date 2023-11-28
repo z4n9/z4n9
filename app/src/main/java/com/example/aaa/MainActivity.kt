@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.activity.ComponentActivity
 import com.example.aaa.databinding.ActivityMainBinding
 
-
+//эта функция дает доступ к кнопкам Activity_Main
 class MainActivity : ComponentActivity() {
     lateinit var Asus: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +17,11 @@ class MainActivity : ComponentActivity() {
         setContentView(Asus.root)
 
     }
+    //кнопка перехода в 2 лист
     fun onClickMain2(view: View){
-        val perehod = Intent(this, MainActivity::class.java)
+        val perehod = Intent(this, MainActivity2::class.java)
         startActivity(perehod)
     }
+
 
 }
