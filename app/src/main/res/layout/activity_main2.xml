@@ -49,6 +49,11 @@
           android:layout_height="match_parent"
           android:layout_weight="1"
           android:text="Button" />
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/artur_stick"
+          android:visibility="visible" />
 
     </LinearLayout>
 
@@ -68,6 +73,11 @@
           android:layout_height="match_parent"
           android:layout_weight="1"
           android:text="Button" />
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/Rasul_stick"
+          android:visibility="visible" />
 
     </LinearLayout>
 
@@ -87,6 +97,11 @@
           android:layout_height="match_parent"
           android:layout_weight="1"
           android:text="Button" />
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/zayn_stick"
+          android:visibility="visible" />
 
 
     </LinearLayout>
