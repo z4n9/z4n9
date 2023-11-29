@@ -15,6 +15,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:screenOrientation="landscape"
             android:theme="@style/Theme.Aaa" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity3" />
+        <activity android:name=".MainActivity2"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MainActivity3"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

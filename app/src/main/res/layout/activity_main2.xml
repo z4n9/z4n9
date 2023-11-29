@@ -13,7 +13,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:scaleType="centerCrop"
-      android:src="@drawable/abbeyroadprojectedited"
+      android:src="@drawable/abbeyroad"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.504"
@@ -76,7 +76,7 @@
       <ImageView
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          android:src="@drawable/Rasul_stick"
+          android:src="@drawable/rasul_stick"
           android:visibility="visible" />
 
     </LinearLayout>
@@ -97,11 +97,6 @@
           android:layout_height="match_parent"
           android:layout_weight="1"
           android:text="Button" />
-      <ImageView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:src="@drawable/zayn_stick"
-          android:visibility="visible" />
 
 
     </LinearLayout>
@@ -121,11 +116,18 @@
           android:layout_height="match_parent"
           android:layout_weight="1"
           android:text="Button" />
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/zayn_stick"
+          android:visibility="visible" />
+
     </LinearLayout>
   </LinearLayout>
 
   <!--ЭТО ПОЛЕ ДЛЯ КНОПКИ START-->
   <LinearLayout
+      android:id="@+id/linearLayout"
       android:layout_width="205dp"
       android:layout_height="63dp"
       android:layout_marginBottom="16dp"
@@ -146,5 +148,34 @@
         app:layout_constraintBottom_toBottomOf="parent" />
 
 
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="226dp"
+      android:layout_height="89dp"
+      android:layout_marginBottom="80dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.475"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/Eror"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center"
+        android:text="Выберите персонажей"
+        android:textColor="#FF0000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FF0000"
+        android:textColorLink="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
   </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
