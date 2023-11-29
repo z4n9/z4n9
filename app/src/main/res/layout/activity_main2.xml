@@ -23,8 +23,8 @@
 
   <!--ЭТО ГЛАВНОЕ ПОЛЕ-->
   <LinearLayout
-      android:layout_width="774dp"
-      android:layout_height="284dp"
+      android:layout_width="756dp"
+      android:layout_height="215dp"
       android:orientation="horizontal"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
       <!--ЭТА КНОПКА ВЫБОРА ПЕРСОНАЖА-->
 
       <Button
-          android:id="@+id/button3"
+          android:id="@+id/Artur"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -63,7 +63,7 @@
       <!--ЭТО КНОПКА ВТОРОГО ПЕРСОНАЖА-->
 
       <Button
-          android:id="@+id/button4"
+          android:id="@+id/Rasul"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -82,7 +82,7 @@
 
       <!--ЭТА ЭТО КНОПКА ТРЕТЬЕГО ПЕРСОНАЖА-->
       <Button
-          android:id="@+id/button5"
+          android:id="@+id/Nail"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:layout_weight="1"
@@ -101,7 +101,7 @@
 
       <!--ЭТО КНОПКА ЧЕТВЕРТОГО ПЕРСОНАЖА-->
       <Button
-          android:id="@+id/button6"
+          android:id="@+id/Zayn"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:layout_weight="1"
