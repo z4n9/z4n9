@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abbeyroad"
+    tools:context=".MainActivity4">
+
+
+    <!--ЭТО ПОЛЕ ДЛЯ ДЖОСТИКА ПЕРВОГО ИГРОКА-->
+
+    <LinearLayout
+        android:id="@+id/joystick1"
+        android:layout_width="175dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937">
+
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/left" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКОК УДАРА И УДАРА НОГОЙ-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК УДАРА -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:scrollbarAlwaysDrawHorizontalTrack="false">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/punch" />
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ ПО ЦЕНТРУ НА ВСЯКИЙ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА НОГОЙ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kick" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО  ПОЛЕ  ПОЛЕ ДЛЯ КНОПКИ ПРАВО -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО    ПОЛЕ ДЛЯ КНОПКИ ПРАВО -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--ЭТО ПОЛЕ ДЛЯ ДЖОСТИКА ПЕРВОГО ИГРОКА 2-->
+    <LinearLayout
+        android:id="@+id/joystick2"
+        android:layout_width="175dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО 2-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКИ ЛЕВО 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/left" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО ПОЛЕ ДЛЯ ПОЛЕ  ДЛЯ КНОПКОК УДАРА И УДАРА РУКОЙ 2-->
+        <LinearLayout
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА РУКОЙ 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/punch" />
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ ПО ЦЕНТРУ НА ВСЯКИЙ 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <!--ЭТО  ПОЛЕ  ДЛЯ КНОПКОК  УДАРА НОГОЙ 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kick" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--ЭТО  ПОЛЕ  ПОЛЕ ДЛЯ КНОПКИ ПРАВО 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--ЭТО   ПОЛЕ ДЛЯ КНОПКИ ПРАВО 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="273dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012">
+
+        <ImageView
+            android:id="@+id/Hard_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_1_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_1_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_1_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="273dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/Hard_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_2_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_2_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/Hard_2_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/img" />
+    </LinearLayout>
+
+    <!--ЭТО ПОЛЕ ДЖОСТИКА ВТОРОГО ИГРОКА-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

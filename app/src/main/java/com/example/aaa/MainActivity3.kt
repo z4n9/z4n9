@@ -24,8 +24,8 @@ class MainActivity3 : ComponentActivity() {
 
     }
     //кнопка верунтся назад
-    fun onClickMain3(view: View){
-        val perehodActivity3 = Intent(this, MainActivity::class.java)
+    fun onClickMain4(view: View){
+        val perehodActivity3 = Intent(this, MainActivity4::class.java)
         startActivity(perehodActivity3)
     }
 
