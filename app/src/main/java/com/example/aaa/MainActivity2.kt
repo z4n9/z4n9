@@ -7,8 +7,10 @@ import android.util.Log
 import android.view.View
 import android.view.View.OnClickListener
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.aaa.databinding.ActivityMain2Binding
+
 
 //эта функция дает доступ к кнопкам Activity_Main
 
@@ -24,27 +26,17 @@ class MainActivity2 : ComponentActivity() {
     }
     //кнопка перехода в 3 лист
 
+    fun OnClickListener(view: View){
+        if (isChild){
+            R.id.Artur
+            R.id.Rasul
+            R.id.Nail
+            R.id.Zayn
 
-    fun onClickMain3(view: View) {
-        var Artur = (R.id.Artur)
-        var Rasul = (R.id.Rasul)
-        var Nail = (R.id.Nail)
-        var Zayn = (R.id.Zayn)
-        var Error = (R.id.Eror)
-        fun foo() {
-            listOf(Artur,Rasul,Nail,Zayn,Error).forEach{
-                if (it == )
-            }
-        }
-
-
-
-            val perehodActivity3 = Intent(this, MainActivity3::class.java)
-            startActivity(perehodActivity3)
+                val perehodActivity3 = Intent(this, MainActivity3::class.java)
+                    startActivity(perehodActivity3)
+        } else{
+                R.id.Eror = View.VISIBLE
 
         }
-
-
-
-
-}
+}}
