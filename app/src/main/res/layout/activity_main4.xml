@@ -38,11 +38,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/left"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
                     android:contentDescription="@string/app_name"
+                    android:onClick="OnClickLeft"
                     android:scaleType="centerCrop"
                     android:src="@drawable/left" />
             </LinearLayout>
@@ -62,7 +63,7 @@
                 android:scrollbarAlwaysDrawHorizontalTrack="false">
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/panch"
                     android:layout_width="80dp"
                     android:layout_height="50dp"
                     android:backgroundTint="#00FFFFFF"
@@ -88,7 +89,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/kick"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
@@ -113,11 +114,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/right"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
                     android:contentDescription="@string/app_name"
+                    android:onClick="OnClickRight"
                     android:scaleType="centerCrop"
                     android:src="@drawable/right" />
             </LinearLayout>
@@ -153,7 +155,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/leftt"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
@@ -176,7 +178,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/panchh"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
@@ -201,7 +203,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton7"
+                    android:id="@+id/kickk"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
@@ -220,13 +222,14 @@
 
             <!--ЭТО   ПОЛЕ ДЛЯ КНОПКИ ПРАВО 2-->
             <LinearLayout
+                android:id="@+id/q"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/imageButton8"
+                    android:id="@+id/rightt"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#00FFFFFF"
@@ -239,8 +242,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="273dp"
-        android:layout_height="64dp"
+        android:layout_width="283dp"
+        android:layout_height="52dp"
         android:orientation="horizontal"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -307,14 +310,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="273dp"
-        android:layout_height="64dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="18dp"
         android:orientation="horizontal"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/Hard_2_1"
@@ -372,6 +375,59 @@
             android:visibility="visible"
             app:srcCompat="@drawable/img" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Lil"
+        android:layout_width="535dp"
+        android:layout_height="134dp"
+        android:src="@drawable/img"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ImageView
+        android:id="@+id/lili"
+        android:layout_width="487dp"
+        android:layout_height="137dp"
+        android:rotationY="-180"
+        android:src="@drawable/img"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player1"
+        android:onClick="onClickVibor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player2"
+        android:onClick="onClickVibor2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
 
     <!--ЭТО ПОЛЕ ДЖОСТИКА ВТОРОГО ИГРОКА-->
 

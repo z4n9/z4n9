@@ -24,8 +24,25 @@ class MainActivity3 : ComponentActivity() {
 
     }
     //кнопка верунтся назад
-    fun onClickMain4(view: View){
+
+    fun onClickArtur2(view: View){
         val perehodActivity3 = Intent(this, MainActivity4::class.java)
+        perehodActivity3.putExtra("kilt",(R.drawable.artur_stick))
+        startActivity(perehodActivity3)
+    }
+    fun onClickRasul2(view: View){
+        val perehodActivity3 = Intent(this, MainActivity4::class.java)
+        perehodActivity3.putExtra("kilt",(R.drawable.rasul_stick))
+        startActivity(perehodActivity3)
+    }
+    fun onClickNail2(view: View){
+        val perehodActivity3 = Intent(this, MainActivity4::class.java)
+        perehodActivity3.putExtra("kilt",(R.drawable.artur_stick))
+        startActivity(perehodActivity3)
+    }
+    fun onClickZayn2(view: View){
+        val perehodActivity3 = Intent(this, MainActivity4::class.java)
+        perehodActivity3.putExtra("kilt",(R.drawable.zayn_stick))
         startActivity(perehodActivity3)
     }
 

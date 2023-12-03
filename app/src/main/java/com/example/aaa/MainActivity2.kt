@@ -26,13 +26,28 @@ class MainActivity2 : ComponentActivity() {
         Sukik = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(Sukik.root)
 
-
+        
     }
-    //кнопка перехода в 3 лист
-
-    fun onClickMain3 (view: View) {
-        val perehodActivity3 = Intent(this, MainActivity3::class.java)
-        startActivity(perehodActivity3)
-
+    fun onClickArtur (view: View) {
+        val gamer1 = Intent(this, MainActivity4::class.java)
+        gamer1.putExtra("kilt2",(R.drawable.artur_stick))
+        startActivity(gamer1)
     }
+
+    fun onClickRasul (view: View) {
+        val gamer1 = Intent(this, MainActivity4::class.java)
+        gamer1.putExtra("kilt2",(R.drawable.rasul_stick))
+        startActivity(gamer1)
+    }
+    fun onClickNail (view: View) {
+        val gamer1 = Intent(this, MainActivity4::class.java)
+        gamer1.putExtra("kilt2",(R.drawable.artur_stick))
+        startActivity(gamer1)
+    }
+    fun onClickZayn (view: View) {
+        val gamer1 = Intent(this, MainActivity4::class.java)
+        gamer1.putExtra("kilt2",(R.drawable.zayn_stick))
+        startActivity(gamer1)
+    }
+
 }
