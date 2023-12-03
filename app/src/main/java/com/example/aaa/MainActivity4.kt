@@ -5,8 +5,11 @@ import android.content.Intent
 import android.content.res.ColorStateList
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import android.view.View.OnClickListener
+import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -47,6 +50,51 @@ class MainActivity4 : ComponentActivity() {
     fun onClickVibor2(view: View){
         val onClickVibor2 = Intent(this, MainActivity3::class.java)
         startActivity(onClickVibor2)
+    }
+
+
+
+
+
+
+    fun OnClickLeft(view: View) {
+        val Pers1: ImageView = findViewById(R.id.Lil)
+        val Left = Pers1.layoutParams as ViewGroup.MarginLayoutParams
+        Left.leftMargin -= 20
+        Pers1.layoutParams = Left
+
+    }
+    fun OnClickRight(view: View) {
+        val Pers1: ImageView = findViewById(R.id.Lil)
+        val Right = Pers1.layoutParams as ViewGroup.MarginLayoutParams
+        Right.leftMargin += 20
+        Pers1.layoutParams = Right
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    fun onClickLeft2(view: View) {
+        val Pers2: ImageView = findViewById(R.id.lili)
+        val Left = Pers2.layoutParams as ViewGroup.MarginLayoutParams
+        Left.leftMargin -= 20
+        Pers2.layoutParams = Left
+
+    }
+    fun onClickRight2(view: View) {
+        val Pers2: ImageView = findViewById(R.id.lili)
+        val Right = Pers2.layoutParams as ViewGroup.MarginLayoutParams
+        Right.leftMargin += 20
+        Pers2.layoutParams = Right
+
     }
 
 }
