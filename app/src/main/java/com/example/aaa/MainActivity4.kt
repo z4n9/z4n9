@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.View
 import android.view.View.OnClickListener
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
@@ -16,6 +17,7 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import com.example.aaa.databinding.ActivityMain3Binding
 import com.example.aaa.databinding.ActivityMain4Binding
 
@@ -94,6 +96,10 @@ class MainActivity4 : ComponentActivity() {
         val Right = Pers2.layoutParams as ViewGroup.MarginLayoutParams
         Right.leftMargin += 20
         Pers2.layoutParams = Right
+
+    }
+
+    fun onClickStart(view: View){
 
     }
 
