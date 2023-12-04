@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.View
+import android.view.View.GONE
 import android.view.View.OnClickListener
 import android.view.View.VISIBLE
 import android.view.ViewGroup
@@ -99,8 +100,5 @@ class MainActivity4 : ComponentActivity() {
 
     }
 
-    fun onClickStart(view: View){
-
-    }
 
 }

@@ -380,32 +380,32 @@
 
     <ImageView
         android:id="@+id/Lil"
-        android:layout_width="535dp"
-        android:layout_height="134dp"
+        android:layout_width="192dp"
+        android:layout_height="153dp"
         android:src="@drawable/img"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <ImageView
         android:id="@+id/lili"
-        android:layout_width="487dp"
-        android:layout_height="137dp"
+        android:layout_width="195dp"
+        android:layout_height="177dp"
         android:src="@drawable/img"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.299" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/P1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Player1"
@@ -418,7 +418,7 @@
         app:layout_constraintVertical_bias="0.983" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/P2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Player2"
@@ -429,17 +429,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.983" />
-
-    <Button
-        android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Start"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!--ЭТО ПОЛЕ ДЖОСТИКА ВТОРОГО ИГРОКА-->
 

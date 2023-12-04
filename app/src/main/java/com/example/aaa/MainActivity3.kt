@@ -27,22 +27,22 @@ class MainActivity3 : ComponentActivity() {
 
     fun onClickArtur2(view: View){
         val perehodActivity3 = Intent(this, MainActivity4::class.java)
-        perehodActivity3.putExtra("kilt",(R.drawable.artur_stick))
+        perehodActivity3.putExtra("kilt",(R.drawable.artur_p2))
         startActivity(perehodActivity3)
     }
     fun onClickRasul2(view: View){
         val perehodActivity3 = Intent(this, MainActivity4::class.java)
-        perehodActivity3.putExtra("kilt",(R.drawable.rasul_stick))
+        perehodActivity3.putExtra("kilt",(R.drawable.rasul_p2))
         startActivity(perehodActivity3)
     }
     fun onClickNail2(view: View){
         val perehodActivity3 = Intent(this, MainActivity4::class.java)
-        perehodActivity3.putExtra("kilt",(R.drawable.artur_stick))
+        perehodActivity3.putExtra("kilt",(R.drawable.artur_p2))
         startActivity(perehodActivity3)
     }
     fun onClickZayn2(view: View){
         val perehodActivity3 = Intent(this, MainActivity4::class.java)
-        perehodActivity3.putExtra("kilt",(R.drawable.zayn_stick))
+        perehodActivity3.putExtra("kilt",(R.drawable.zayn_p2))
         startActivity(perehodActivity3)
     }
 
